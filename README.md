@@ -29,7 +29,8 @@ pero el texto sale en Helvetica o Arial.
 npm run render           # ClienteDificil → out/cliente-dificil.mp4 (masterizado a -14 LUFS)
 npm run render:ventas    # ScriptVentas  → out/script-ventas.mp4
 bash scripts/web.sh out/script-ventas.mp4 examen-ventas/video/script-ventas-web.mp4 140k   # versión para el examen
-node scripts/stills.mjs 1400 2900   # fotogramas de revisión en out/stills
+node scripts/stills.mjs ScriptVentas 1400 2900   # fotogramas de revisión en out/stills
+node scripts/tiempos.mjs src/ventas/timeline.ts  # cuadro y segundo de cada línea
 ```
 
 ## Cómo está hecho un video
@@ -69,6 +70,9 @@ claude.ai junto con `video/<nombre>-web.mp4` (máximo 15 MB). Los resultados se 
 cada asesor escribe solo el suyo y solo el dueño ve la tabla del equipo. Los asesores necesitan acceso de Contributor.
 
 ## Hacer uno nuevo
+
+Si lo hace un agente de IA (Claude Code, Cursor, Codex), el paso a paso detallado está en `CLAUDE.md`.
+
 
 1. Copia `src/ventas/` a `src/<tu-video>/` y reescribe `script.ts` con tu guion.
 2. Ajusta personajes e ilustraciones en `characters.tsx` e `inserts.tsx`.
