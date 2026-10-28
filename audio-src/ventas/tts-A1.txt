@@ -1,0 +1,61 @@
+[warmly] Buenos días, ¿tengo el gusto de hablar con la señora Patricia Morales?
+
+[pause]
+
+[friendly] Mucho gusto, mi nombre es Andrés Medina y me comunico de J. García López. [calm] El motivo de mi llamada es compartirle información sobre nuestros planes de previsión funeraria, para que usted conozca las alternativas y pueda valorar si alguna se adapta a sus necesidades y posibilidades.
+
+[pause]
+
+[warmly] ¿Me permite hacerle un par de preguntas para orientarle mejor? No quiero llenarle de información que quizá no sea la que usted necesita.
+
+[pause]
+
+Antes de explicarle nuestros planes, me gustaría conocer un poquito más de su situación. ¿Usted ha considerado anteriormente un plan de previsión, o sería la primera vez que revisa este tipo de opciones?
+
+[pause]
+
+Y en su caso, ¿estaría buscando protegerse usted, a su pareja, a sus papás o a varios integrantes de su familia?
+
+[pause]
+
+¿Hay alguna necesidad en particular que le gustaría resolver? Por ejemplo, contar con un servicio previamente organizado, evitar que su familia tenga que resolver todo en un momento complicado, o conocer alternativas de pago.
+
+[pause]
+
+[gently] Comprendo lo que me comenta. [warmly] Entonces, si le parece, voy a explicarle las opciones que podrían ajustarse a sus necesidades.
+
+[pause]
+
+Por lo que me comenta, considero que lo más importante para usted es que sus hijos no tengan que resolver todo a las carreras.
+
+[pause]
+
+Me gustaría explicarle qué incluye la opción que podría interesarle, cuánto cuesta y cuáles son sus condiciones, para que pueda decidir con toda claridad. La opción que podemos revisar es esta. Este plan contempla los servicios confirmados.
+
+[pause]
+
+En cuanto a la forma de pago, podemos revisar las modalidades autorizadas. Para esta opción, le doy el costo, con el anticipo y la mensualidad.
+
+[pause]
+
+Quiero que tenga muy claro qué incluye, qué condiciones aplican y qué necesita cumplir para utilizar el servicio. Si tiene alguna duda, con mucho gusto la revisamos antes de continuar.
+
+[pause]
+
+De lo que le acabo de explicar, ¿qué aspecto le resulta más importante: los servicios incluidos, la forma de pago o la posibilidad de proteger a más integrantes de su familia?
+
+[pause]
+
+[warmly] Por supuesto, me parece una buena decisión que lo converse con su familia, porque es un tema que puede involucrar a varias personas. Para que puedan revisarlo con mayor facilidad, ¿qué cree que les interesaría conocer primero: el costo, los servicios incluidos o las condiciones del plan?
+
+[pause]
+
+Con mucho gusto. Le enviaré la información del plan que revisamos, con los servicios, los costos y las condiciones aplicables. Para enviarle algo que realmente le sea útil, ¿prefiere la opción más acorde con lo que me comentó, o desea comparar varias alternativas?
+
+[pause]
+
+Perfecto. Se la envío a este número. Y para no dejarle únicamente la información y que después se quede con alguna duda, ¿le parece si acordamos una llamada breve para revisarla juntos? ¿Le funciona el jueves a las seis de la tarde?
+
+[pause]
+
+[warmly] Perfecto. Entonces, quedamos en que me comunicaré con usted el jueves a las seis. Le enviaré la información acordada y, cuando volvamos a hablar, podremos resolver cualquier duda que le haya surgido. Le agradezco mucho su tiempo. Que tenga excelente día.

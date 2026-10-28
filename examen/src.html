@@ -1,0 +1,458 @@
+<title>Examen Cliente difícil</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+@font-face{font-family:"Gotham";font-weight:400;font-display:swap;src:url(data:font/woff2;base64,__GOTHAM_400__) format("woff2")}
+@font-face{font-family:"Gotham";font-weight:500;font-display:swap;src:url(data:font/woff;base64,__GOTHAM_500__) format("woff")}
+@font-face{font-family:"Gotham";font-weight:700;font-display:swap;src:url(data:font/woff;base64,__GOTHAM_700__) format("woff")}
+
+/* Layout: el video a la izquierda (fijo al hacer scroll) y el examen a la derecha; en teléfono se apilan. */
+:root{
+  --bg:#F8F6F3; --surface:#FFFFFF; --sunk:#F0EDE8; --rule:#E0D9CA;
+  --fg:#1C1917; --muted:#57534E; --faint:#A8A29E;
+  --navy:#0F1E6A; --navy-ink:#0F1E6A; --on-navy:#FFFFFF;
+  --gold:#B0842A; --gold-soft:#EFE3C8; --yellow:#F7BE00;
+  --ok:#1F7A4D; --ok-soft:#E3F1E8; --bad:#B23A1C; --bad-soft:#F7E4DC;
+  --serif:"PT Serif",Georgia,"Times New Roman",serif;
+  --sans:"Gotham","Gotham Pro","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0D1230; --surface:#151C42; --sunk:#10173A; --rule:#2A3266;
+  --fg:#F0EDE8; --muted:#C2BDB4; --faint:#8C88A0;
+  --navy:#3A4FB8; --navy-ink:#AEB8F0; --on-navy:#FFFFFF;
+  --gold:#D9A94A; --gold-soft:#3A3220; --yellow:#F7BE00;
+  --ok:#5CC28C; --ok-soft:#173A2B; --bad:#F08A6A; --bad-soft:#40211A;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1230; --surface:#151C42; --sunk:#10173A; --rule:#2A3266;
+  --fg:#F0EDE8; --muted:#C2BDB4; --faint:#8C88A0;
+  --navy:#3A4FB8; --navy-ink:#AEB8F0; --on-navy:#FFFFFF;
+  --gold:#D9A94A; --gold-soft:#3A3220; --yellow:#F7BE00;
+  --ok:#5CC28C; --ok-soft:#173A2B; --bad:#F08A6A; --bad-soft:#40211A;
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.5}
+.wrap{max-width:1280px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+
+header.top{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--rule);margin-bottom:22px}
+.logo{height:40px;width:auto}
+.logo.dark{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo.light{display:none}:root:not([data-theme="light"]) .logo.dark{display:block}}
+:root[data-theme="dark"] .logo.light{display:none}
+:root[data-theme="dark"] .logo.dark{display:block}
+.top .sep{width:1px;height:34px;background:var(--rule)}
+.top .t1{font-size:12px;color:var(--muted);letter-spacing:.04em}
+.top .t2{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--navy-ink);line-height:1.15}
+.rail{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.rail span{font-size:12px;font-weight:500;border:1px solid var(--rule);border-radius:999px;padding:4px 11px;color:var(--muted);background:var(--surface)}
+
+.grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}}
+.left{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);min-width:0}
+@media (max-width:900px){.left{position:static}}
+
+.player{position:relative;background:#000;border-radius:10px;overflow:hidden;aspect-ratio:16/9;max-width:100%}
+.player video{width:100%;height:100%;display:block}
+.review{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:10px;padding:12px 14px;border-radius:8px;background:var(--gold-soft);border:1px solid var(--gold)}
+.review b{font-weight:700}
+.review .when{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px}
+.review .bar{flex:1 1 100%;height:4px;background:var(--rule);border-radius:2px;overflow:hidden}
+.review .bar i{display:block;height:100%;width:0;background:var(--gold)}
+
+h2.lbl{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px}
+ol.chap{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+ol.chap li{border-bottom:1px solid var(--rule)}
+ol.chap button{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:52px minmax(0,1fr);gap:10px;width:100%;padding:8px 6px;border-radius:4px}
+ol.chap button:hover{background:var(--sunk)}
+ol.chap button:focus-visible{outline:3px solid var(--yellow)}
+ol.chap .tc{font-variant-numeric:tabular-nums;color:var(--gold);font-weight:500;font-size:13px;padding-top:1px}
+ol.chap li.now button{background:var(--sunk)}
+ol.chap li.now .tt{font-weight:700;color:var(--navy-ink)}
+
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:24px;min-width:0}
+@media (max-width:480px){.card{padding:18px}}
+.card h1{font-family:var(--serif);font-size:28px;line-height:1.2;margin:0 0 10px;color:var(--navy-ink);text-wrap:balance}
+.card p{margin:0 0 12px;max-width:62ch}
+.muted{color:var(--muted)}
+.field{display:grid;gap:6px;margin:18px 0}
+.field label{font-size:13px;font-weight:500}
+.field input{font:inherit;padding:11px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--bg);color:var(--fg)}
+.btn{cursor:pointer;border:0;border-radius:999px;padding:11px 22px;font-weight:700;background:var(--navy);color:var(--on-navy)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--navy-ink);border:1px solid var(--rule)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.facts{display:flex;gap:18px;flex-wrap:wrap;margin:16px 0 4px;font-size:13px;color:var(--muted)}
+.facts b{display:block;font-size:20px;color:var(--fg);font-variant-numeric:tabular-nums}
+
+.qhead{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:14px}
+.kicker{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);background:var(--gold-soft);border-radius:999px;padding:4px 11px}
+.count{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.dots{display:flex;gap:4px;margin-bottom:18px}
+.dots i{flex:1;height:4px;border-radius:2px;background:var(--rule)}
+.dots i.ok{background:var(--ok)}
+.dots i.bad{background:var(--bad)}
+.dots i.cur{background:var(--navy-ink)}
+.q{font-family:var(--serif);font-size:21px;line-height:1.3;margin:0 0 16px;text-wrap:balance}
+.opts{display:grid;gap:8px}
+.opt{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;align-items:start;padding:12px 14px;border:1px solid var(--rule);border-radius:8px;background:var(--bg)}
+.opt:hover{border-color:var(--navy-ink)}
+.opt:focus-visible{outline:3px solid var(--yellow)}
+.opt .k{width:26px;height:26px;border-radius:50%;border:1px solid var(--rule);display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--muted);background:var(--surface)}
+.opt[aria-disabled="true"]{cursor:default}
+.opt[aria-disabled="true"]:hover{border-color:var(--rule)}
+.opt.ok{border-color:var(--ok);background:var(--ok-soft)}
+.opt.ok .k{background:var(--ok);border-color:var(--ok);color:var(--surface)}
+.opt.bad{border-color:var(--bad);background:var(--bad-soft)}
+.opt.bad .k{background:var(--bad);border-color:var(--bad);color:var(--surface)}
+.fb{margin-top:16px;padding:14px 16px;border-radius:8px;border-left:4px solid}
+.fb.ok{background:var(--ok-soft);border-color:var(--ok)}
+.fb.bad{background:var(--bad-soft);border-color:var(--bad)}
+.fb h3{margin:0 0 4px;font-size:15px}
+.fb p{margin:0 0 10px}
+.fb .row{margin-top:10px}
+
+.score{font-family:var(--serif);font-size:64px;line-height:1;color:var(--navy-ink);font-variant-numeric:tabular-nums}
+.score small{font-size:24px;color:var(--muted)}
+.verdict{display:inline-block;margin:10px 0 14px;font-weight:700;border-radius:999px;padding:5px 14px}
+.verdict.ok{background:var(--ok-soft);color:var(--ok)}
+.verdict.bad{background:var(--bad-soft);color:var(--bad)}
+ul.res{list-style:none;padding:0;margin:14px 0;border-top:1px solid var(--rule)}
+ul.res li{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--rule);font-size:14px}
+ul.res .m{font-weight:700}
+ul.res .m.ok{color:var(--ok)} ul.res .m.bad{color:var(--bad)}
+ul.res button{all:unset;cursor:pointer;color:var(--gold);font-size:13px;font-variant-numeric:tabular-nums}
+ul.res button:focus-visible{outline:3px solid var(--yellow)}
+.note{font-size:13px;color:var(--muted);margin-top:12px}
+
+section.team{margin-top:40px}
+section.team h2{font-family:var(--serif);font-size:24px;color:var(--navy-ink);margin:0 0 4px}
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:10px;background:var(--surface);margin-top:14px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;background:var(--sunk)}
+td.n{font-variant-numeric:tabular-nums}
+.pill{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:2px 10px}
+.pill.ok{background:var(--ok-soft);color:var(--ok)} .pill.bad{background:var(--bad-soft);color:var(--bad)}
+.weak{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.weak span{font-size:13px;border:1px solid var(--rule);border-radius:999px;padding:4px 12px;background:var(--surface)}
+.weak b{color:var(--bad);font-variant-numeric:tabular-nums}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <img class="logo light" alt="J. García López" src="data:image/svg+xml;base64,__LOGO_NEGRO__">
+    <img class="logo dark" alt="J. García López" src="data:image/svg+xml;base64,__LOGO_BLANCO__">
+    <div class="sep" aria-hidden="true"></div>
+    <div><div class="t1">Capacitación de asesores</div><div class="t2">Examen · Cliente difícil</div></div>
+    <div class="rail" aria-label="Método"><span>Escuchar</span><span>Validar</span><span>Reencuadrar</span><span>Preguntar</span></div>
+  </header>
+
+  <div class="grid">
+    <div class="left">
+      <div class="player"><video id="vid" src="video/cliente-dificil-web.mp4" controls preload="metadata" playsinline></video></div>
+      <div class="review" id="review" hidden>
+        <div style="flex:1 1 240px;min-width:0"><b id="rvTitle"></b><div class="when" id="rvWhen"></div></div>
+        <button class="btn" id="rvBack" type="button">Volver a contestar</button>
+        <div class="bar"><i id="rvBar"></i></div>
+      </div>
+      <h2 class="lbl">Secciones del video</h2>
+      <ol class="chap" id="chap"></ol>
+    </div>
+
+    <div class="card" id="panel" aria-live="polite"></div>
+  </div>
+
+  <section class="team" id="team" hidden>
+    <h2>Resultados del equipo</h2>
+    <p class="muted" style="margin:0">Solo usted ve esta sección. Muestra el último intento y la mejor calificación de cada consultor.</p>
+    <div class="weak" id="weak"></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Consultor</th><th>Mejor</th><th>Último</th><th>Intentos</th><th>Estado</th><th>Último intento</th></tr></thead>
+      <tbody id="teamRows"><tr><td colspan="6" class="muted">Todavía nadie ha terminado el examen.</td></tr></tbody>
+    </table></div>
+  </section>
+</div>
+
+<script>
+// Secciones del video (segundos). Salen de los tiempos de cada línea del guion (cuadro / 30).
+const SECTIONS = [
+  {id:"metodo",   t:"Los cuatro pasos del método",                 s:17.1,  e:27.8},
+  {id:"apertura", t:"Apertura sin pedir permiso",                  s:34.8,  e:65.8},
+  {id:"obj1",     t:"Objeción 1 · «No me interesa»",               s:66.3,  e:104.2},
+  {id:"producto", t:"Qué es un plan funerario a futuro",           s:104.5, e:117.5},
+  {id:"obj3",     t:"Objeción 3 · «No quiero hablar de ese tema»", s:117.8, e:150.2},
+  {id:"giro",     t:"La pregunta que cambió la llamada",           s:153.6, e:185.5},
+  {id:"pagos",    t:"«Es carísimo»: pagos a precio de hoy",        s:210.4, e:230.6},
+  {id:"incluye",  t:"Qué incluye el plan",                         s:231.0, e:255.2},
+  {id:"garantia", t:"«¿Quién me garantiza?»",                      s:255.5, e:275.2},
+  {id:"obj2",     t:"Objeción 2 · «Necesito pensarlo»",            s:275.5, e:299.1},
+  {id:"resumen",  t:"Resumir y confirmar",                         s:303.3, e:327.8},
+  {id:"cierre",   t:"Cierre con dos opciones",                     s:328.3, e:340.9},
+  {id:"quedamos", t:"Quedamos así",                                s:343.7, e:368.0},
+  {id:"lenguaje", t:"Cuide las palabras",                          s:383.1, e:398.1},
+];
+const SEC = Object.fromEntries(SECTIONS.map(x => [x.id, x]));
+
+// La primera opción es la correcta; se barajan al mostrarlas.
+const QUESTIONS = [
+  {id:"q1", sec:"metodo", tag:"El método",
+   q:"¿En qué orden aplica Mariana el método en cada respuesta?",
+   o:["Escuchar, validar, reencuadrar y preguntar","Preguntar, escuchar, validar y reencuadrar","Validar, explicar el plan, escuchar y cerrar","Escuchar, presentar el precio, preguntar y cerrar"],
+   x:"Cada respuesta de Mariana sigue esos cuatro pasos y termina con una pregunta abierta."},
+  {id:"q2", sec:"apertura", tag:"Apertura",
+   q:"¿Por qué Mariana no abre con «¿me permite dos minutos?»?",
+   o:["Porque a una pregunta de sí o no, el cliente difícil contesta que no","Porque dos minutos no alcanzan para explicar el plan","Porque en la apertura no se hacen preguntas","Porque conviene dar el precio desde el principio"],
+   x:"Mariana no pide permiso: hace una pregunta para entender la situación del cliente."},
+  {id:"q3", sec:"obj1", tag:"Objeción 1",
+   q:"El cliente dice «no me interesa». ¿Qué hace Mariana primero?",
+   o:["Le da la razón y le agradece que conteste: valida antes de explicar","Le explica rápido todo lo que incluye el plan","Le pregunta a qué hora le puede volver a llamar","Le insiste en que solo le quitará un minuto"],
+   x:"No discute. Primero valida: «Le entiendo, señor Torres, y le agradezco que me conteste»."},
+  {id:"q4", sec:"obj3", tag:"Objeción 3",
+   q:"Ante «no quiero hablar de ese tema», ¿con qué compara Mariana el plan?",
+   o:["Con el seguro del auto: uno lo contrata esperando no usarlo","Con un ahorro para el retiro","Con una inversión que sube de valor","Con un seguro de gastos médicos"],
+   x:"Le da la razón y lleva la plática a lo que a él sí le importa: proteger a su familia."},
+  {id:"q5", sec:"giro", tag:"El giro",
+   q:"El cliente dice «ustedes nada más quieren vender». ¿Qué hace que la llamada cambie?",
+   o:["Una pregunta abierta sobre lo que él vivió cuando falleció un familiar","Ofrecerle un descuento si contrata ese mismo día","Contarle cuántos años tiene la empresa","Pedirle que escuche hasta el final antes de colgar"],
+   x:"«¿Le ha tocado acompañar a algún familiar en una situación así?» Con esa pregunta, él dejó de defenderse."},
+  {id:"q6", sec:"pagos", tag:"Precio",
+   q:"El cliente dice «eso ha de ser carísimo». ¿Cómo empieza Mariana su respuesta?",
+   o:["«Le entiendo, y justamente por eso se contrata hoy»","«Le entiendo, pero no es tan caro como cree»","«Tenemos planes más económicos»","«Depende de cuánto quiera gastar»"],
+   x:"No usa «pero». La objeción se vuelve la razón para contratar: pagos a precio de hoy."},
+  {id:"q7", sec:"pagos", tag:"Montos y plazos",
+   q:"En el guion aparecen [monto] y [plazo]. ¿Qué dice usted en la llamada?",
+   o:["Los datos reales del plan del cliente, sin inventar ni redondear cifras","Un monto aproximado para no perder al cliente","Nada de pagos hasta que haya cita","El precio más bajo del catálogo"],
+   x:"Los corchetes se llenan con los datos reales del plan. Una cifra inventada rompe la confianza que ya ganó."},
+  {id:"q8", sec:"incluye", tag:"Producto",
+   q:"Según Mariana, ¿qué incluye el plan?",
+   o:["Traslado, sala de velación, ataúd o urna y trámites","Traslado, sala y ampliación de sala en todos los planes","Solo el ataúd o la urna","Sala de velación y cremación, sin trámites"],
+   x:"La ampliación de sala existe, y al cliente se le dice con claridad si su plan la incluye."},
+  {id:"q9", sec:"garantia", tag:"Garantía",
+   q:"«¿Quién me garantiza que dentro de veinte años van a seguir ahí?» ¿Qué responde Mariana?",
+   o:["Un contrato firmado, el respaldo de J. García López y atención las 24 horas","Que la empresa nunca ha tenido problemas","Que no se preocupe, que eso no va a pasar","Que eso lo puede revisar después con su gerente"],
+   x:"Primero valida («es una pregunta muy válida») y luego da hechos: contrato, respaldo y una sola llamada."},
+  {id:"q10", sec:"obj2", tag:"Objeción 2",
+   q:"El cliente dice «necesito pensarlo». ¿Qué hace Mariana?",
+   o:["Le pregunta qué quiere analizar: el plan, la forma de pago o consultarlo con su esposa","Le da hasta el viernes para decidir","Le advierte que el precio puede subir","Le dice que le llamará la próxima semana"],
+   x:"No presiona. Aísla la duda para saber qué es exactamente lo que quiere pensar."},
+  {id:"q11", sec:"cierre", tag:"Cierre",
+   q:"¿Cómo propone Mariana la llamada con la esposa?",
+   o:["Con dos opciones: «¿Le queda mejor el jueves o el sábado?»","«¿Cuándo tiene tiempo?»","«¿Le puedo llamar otro día?»","«Le marco cuando su esposa pueda»"],
+   x:"Una pregunta con dos opciones lleva a una fecha. Una pregunta abierta sobre el cuándo deja la cita en el aire."},
+  {id:"q12", sec:"lenguaje", tag:"Lenguaje",
+   q:"¿Qué frase se usa en lugar de «cuando usted se muera»?",
+   o:["«Llegado el momento»","«Cuando ya no esté»","«Cuando pase lo inevitable»","«El día de su fallecimiento»"],
+   x:"Cuide las palabras: «llegado el momento», «y justamente por eso», y siempre de usted."},
+];
+const PASS = 10; // de 12
+
+const $ = s => document.querySelector(s);
+const vid = $("#vid"), panel = $("#panel");
+const mmss = s => { s = Math.floor(s); return Math.floor(s/60) + ":" + String(s%60).padStart(2,"0"); };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle = a => { a = a.slice(); for (let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; };
+const store = {
+  get(k){ try { return localStorage.getItem(k); } catch { return null; } },
+  set(k,v){ try { localStorage.setItem(k,v); } catch {} },
+};
+
+// ---------- Secciones ----------
+const chap = $("#chap");
+SECTIONS.forEach(x => {
+  const li = document.createElement("li"); li.dataset.id = x.id;
+  li.innerHTML = `<button type="button"><span class="tc">${mmss(x.s)}</span><span class="tt">${esc(x.t)}</span></button>`;
+  li.querySelector("button").onclick = () => { stopReview(); vid.currentTime = x.s; vid.play().catch(()=>{}); };
+  chap.appendChild(li);
+});
+function markChapter(){
+  const t = vid.currentTime; let cur = null;
+  for (const x of SECTIONS) if (t >= x.s - 0.3) cur = x.id;
+  chap.querySelectorAll("li").forEach(li => li.classList.toggle("now", li.dataset.id === cur));
+}
+
+// ---------- Repaso de una sección ----------
+let review = null; // {sec, onDone}
+function playSection(secId, onDone){
+  const x = SEC[secId];
+  review = {sec:x, onDone};
+  $("#rvTitle").textContent = "Repaso: " + x.t;
+  $("#rvWhen").textContent = `${mmss(x.s)} – ${mmss(x.e)} · al terminar, vuelve a la pregunta`;
+  $("#rvBar").style.width = "0";
+  $("#review").hidden = false;
+  vid.currentTime = x.s;
+  vid.play().catch(()=>{});
+  if (matchMedia("(max-width:900px)").matches) document.querySelector(".player").scrollIntoView({behavior:"smooth", block:"start"});
+}
+function stopReview(){ review = null; $("#review").hidden = true; }
+function finishReview(){
+  if (!review) return;
+  const done = review.onDone; vid.pause(); stopReview(); done && done();
+}
+$("#rvBack").onclick = finishReview;
+vid.addEventListener("timeupdate", () => {
+  markChapter();
+  if (!review) return;
+  const {s, e} = review.sec;
+  $("#rvBar").style.width = Math.max(0, Math.min(100, (vid.currentTime - s) / (e - s) * 100)) + "%";
+  if (vid.currentTime >= e) finishReview();
+});
+
+// ---------- Examen ----------
+let st = null; // {i, order, first:{qid:bool}, tries, locked, picked}
+let nombre = store.get("jgl-examen-nombre") || "";
+
+function renderStart(){
+  panel.innerHTML = `
+    <span class="kicker">Después del video</span>
+    <h1 style="margin-top:12px">¿Cómo le fue con el señor Torres?</h1>
+    <p>Son ${QUESTIONS.length} preguntas sobre la llamada de Mariana. Si falla una, el video le regresa a la parte donde se explica y después vuelve a contestar.</p>
+    <p class="muted">Cuenta la primera respuesta de cada pregunta. Se aprueba con ${PASS} de ${QUESTIONS.length}.</p>
+    <div class="field">
+      <label for="nombre">Nombre completo</label>
+      <input id="nombre" autocomplete="name" placeholder="Ej. Mariana Ruiz López" value="${esc(nombre)}">
+    </div>
+    <div class="row"><button class="btn" id="go" type="button">Empezar examen</button>
+    <span class="muted" style="font-size:13px">¿Aún no ve el video? Dele play a la izquierda.</span></div>`;
+  const inp = $("#nombre"), go = $("#go");
+  const sync = () => { go.disabled = inp.value.trim().length < 3; };
+  inp.oninput = sync; sync();
+  inp.onkeydown = e => { if (e.key === "Enter" && !go.disabled) go.click(); };
+  go.onclick = () => { nombre = inp.value.trim(); store.set("jgl-examen-nombre", nombre); start(); };
+}
+
+function start(){
+  stopReview();
+  st = {i:0, first:{}, tries:{}, order: QUESTIONS.map(q => q.id)};
+  renderQ();
+}
+
+function renderQ(retry){
+  const q = QUESTIONS[st.i];
+  const opts = shuffle(q.o.map((t, k) => ({t, ok: k === 0})));
+  const dots = QUESTIONS.map((x, k) => {
+    const c = k === st.i ? "cur" : (x.id in st.first ? (st.first[x.id] ? "ok" : "bad") : "");
+    return `<i class="${c}"></i>`;
+  }).join("");
+  panel.innerHTML = `
+    <div class="qhead"><span class="kicker">${esc(q.tag)}</span><span class="count">Pregunta ${st.i+1} de ${QUESTIONS.length}</span></div>
+    <div class="dots" aria-hidden="true">${dots}</div>
+    <p class="q">${esc(q.q)}</p>
+    ${retry ? `<p class="muted" style="font-size:13px;margin-top:-6px">Segundo intento: las opciones cambiaron de lugar.</p>` : ""}
+    <div class="opts" role="group" aria-label="Opciones">${opts.map((o, k) =>
+      `<button class="opt" type="button" data-ok="${o.ok ? 1 : 0}"><span class="k">${"ABCD"[k]}</span><span>${esc(o.t)}</span></button>`).join("")}</div>
+    <div id="fb"></div>`;
+  panel.querySelectorAll(".opt").forEach(b => b.onclick = () => answer(b));
+  if (retry) panel.querySelector(".opt").focus();
+}
+
+function answer(btn){
+  if (btn.getAttribute("aria-disabled") === "true") return;
+  const q = QUESTIONS[st.i], sec = SEC[q.sec];
+  const ok = btn.dataset.ok === "1";
+  if (!(q.id in st.first)) st.first[q.id] = ok;
+  st.tries[q.id] = (st.tries[q.id] || 0) + 1;
+  panel.querySelectorAll(".opt").forEach(b => b.setAttribute("aria-disabled", "true"));
+  btn.classList.add(ok ? "ok" : "bad");
+  const fb = $("#fb");
+  if (ok) {
+    const last = st.i === QUESTIONS.length - 1;
+    fb.innerHTML = `<div class="fb ok"><h3>Correcto</h3><p>${esc(q.x)}</p>
+      <div class="row"><button class="btn" id="next" type="button">${last ? "Ver resultado" : "Siguiente pregunta"}</button></div></div>`;
+    $("#next").onclick = () => { if (last) finish(); else { st.i++; renderQ(); } };
+    $("#next").focus();
+  } else {
+    fb.innerHTML = `<div class="fb bad"><h3>Esa no es</h3>
+      <p>Vuelva a ver «${esc(sec.t)}» (${mmss(sec.s)} – ${mmss(sec.e)}). El video ya está en esa parte; al terminar, contesta de nuevo.</p>
+      <div class="row"><button class="btn ghost" id="skip" type="button">Ya la vi, volver a contestar</button></div></div>`;
+    $("#skip").onclick = finishReview;
+    playSection(q.sec, () => renderQ(true));
+  }
+}
+
+async function finish(){
+  stopReview();
+  const score = QUESTIONS.filter(q => st.first[q.id]).length;
+  const fallas = QUESTIONS.filter(q => !st.first[q.id]).map(q => q.id);
+  const ok = score >= PASS;
+  panel.innerHTML = `
+    <span class="kicker">Resultado</span>
+    <div style="margin-top:14px" class="score">${score}<small> / ${QUESTIONS.length}</small></div>
+    <span class="verdict ${ok ? "ok" : "bad"}">${ok ? "Aprobado" : `No aprobado · necesita ${PASS}`}</span>
+    <p>${ok ? "Buen trabajo. Repase las preguntas que falló antes de practicar en parejas." : "Vea de nuevo las secciones marcadas y repita el examen."}</p>
+    <ul class="res">${QUESTIONS.map(q => {
+      const good = st.first[q.id], sec = SEC[q.sec];
+      return `<li><span class="m ${good ? "ok" : "bad"}">${good ? "✓" : "✗"}</span><span>${esc(q.q)}</span>
+        <button type="button" data-sec="${q.sec}" aria-label="Ver ${esc(sec.t)}">${mmss(sec.s)}</button></li>`;
+    }).join("")}</ul>
+    <div class="row"><button class="btn" id="again" type="button">Repetir examen</button></div>
+    <p class="note" id="saved">Guardando resultado…</p>`;
+  panel.querySelectorAll("ul.res button").forEach(b => b.onclick = () => { const x = SEC[b.dataset.sec]; stopReview(); vid.currentTime = x.s; vid.play().catch(()=>{}); });
+  $("#again").onclick = start;
+  const msg = await save({score, fallas, ok});
+  const el = $("#saved"); if (el) el.textContent = msg;
+}
+
+// ---------- Guardado (db) ----------
+let db = null, me = null;
+async function save({score, fallas, ok}){
+  if (!db || !me) return "No se pudo guardar el resultado aquí. Tome una captura de pantalla y envíela a su gerente.";
+  try {
+    const ref = db.doc("resultados/" + me);
+    const prev = (await ref.get()).data() || {};
+    await ref.set({
+      nombre,
+      intentos: (prev.intentos || 0) + 1,
+      mejor: Math.max(prev.mejor || 0, score),
+      ultimo: score,
+      aprobado: !!prev.aprobado || ok,
+      fallas,
+      total: QUESTIONS.length,
+      fecha: Date.now(),
+    });
+    return "Resultado guardado.";
+  } catch (e) {
+    return "No se pudo guardar el resultado (" + (e && e.code || "error") + "). Tome una captura de pantalla y envíela a su gerente.";
+  }
+}
+
+function renderTeam(docs){
+  const rows = docs.map(d => d.data()).filter(Boolean).sort((a, b) => (b.fecha || 0) - (a.fecha || 0));
+  const tb = $("#teamRows");
+  if (!rows.length) { tb.innerHTML = `<tr><td colspan="6" class="muted">Todavía nadie ha terminado el examen.</td></tr>`; $("#weak").innerHTML = ""; return; }
+  tb.innerHTML = rows.map(r => `<tr>
+    <td>${esc(r.nombre || "Sin nombre")}</td>
+    <td class="n">${r.mejor ?? "–"} / ${r.total || QUESTIONS.length}</td>
+    <td class="n">${r.ultimo ?? "–"}</td>
+    <td class="n">${r.intentos || 0}</td>
+    <td><span class="pill ${r.aprobado ? "ok" : "bad"}">${r.aprobado ? "Aprobado" : "Pendiente"}</span></td>
+    <td class="n">${r.fecha ? new Date(r.fecha).toLocaleString("es-MX", {dateStyle:"medium", timeStyle:"short"}) : "–"}</td></tr>`).join("");
+  const cnt = {};
+  rows.forEach(r => (r.fallas || []).forEach(id => cnt[id] = (cnt[id] || 0) + 1));
+  const top = Object.entries(cnt).sort((a, b) => b[1] - a[1]).slice(0, 5);
+  $("#weak").innerHTML = top.length ? `<span class="muted" style="border:0;background:none;padding-left:0">Lo que más fallan (último intento):</span>` +
+    top.map(([id, n]) => { const q = QUESTIONS.find(x => x.id === id); return `<span>${esc(q ? q.tag : id)} <b>${n}</b></span>`; }).join("") : "";
+}
+
+renderStart();
+
+(async () => {
+  if (!window.claude || !claude.use) return;
+  const [dbNs, userNs] = await Promise.all([claude.use("db"), claude.use("user")]);
+  db = dbNs;
+  if (userNs) {
+    me = await userNs.id();
+    if (db && await userNs.canEdit()) {
+      $("#team").hidden = false;
+      db.collection("resultados").onSnapshot(s => renderTeam(s.docs), () => {
+        $("#teamRows").innerHTML = `<tr><td colspan="6" class="muted">No se pudieron leer los resultados.</td></tr>`;
+      });
+    }
+  }
+})();
+</script>

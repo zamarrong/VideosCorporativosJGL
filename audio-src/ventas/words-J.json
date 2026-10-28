@@ -1,0 +1,266 @@
+[
+  {
+    "text": "Mire,",
+    "type": "word",
+    "start": 0.36,
+    "end": 0.66
+  },
+  {
+    "text": "joven,",
+    "type": "word",
+    "start": 0.88,
+    "end": 1.22
+  },
+  {
+    "text": "se",
+    "type": "word",
+    "start": 1.8,
+    "end": 1.9
+  },
+  {
+    "text": "oye",
+    "type": "word",
+    "start": 1.94,
+    "end": 2.14
+  },
+  {
+    "text": "bien,",
+    "type": "word",
+    "start": 2.18,
+    "end": 2.5
+  },
+  {
+    "text": "pero",
+    "type": "word",
+    "start": 2.82,
+    "end": 3.04
+  },
+  {
+    "text": "no",
+    "type": "word",
+    "start": 3.24,
+    "end": 3.32
+  },
+  {
+    "text": "tengo",
+    "type": "word",
+    "start": 3.42,
+    "end": 3.62
+  },
+  {
+    "text": "dinero.",
+    "type": "word",
+    "start": 3.68,
+    "end": 4.059
+  },
+  {
+    "text": "Ahorita",
+    "type": "word",
+    "start": 4.58,
+    "end": 4.88
+  },
+  {
+    "text": "no",
+    "type": "word",
+    "start": 4.92,
+    "end": 5
+  },
+  {
+    "text": "me",
+    "type": "word",
+    "start": 5.02,
+    "end": 5.06
+  },
+  {
+    "text": "alcanza.",
+    "type": "word",
+    "start": 5.1,
+    "end": 5.58
+  },
+  {
+    "text": "Es",
+    "type": "word",
+    "start": 7,
+    "end": 7.1
+  },
+  {
+    "text": "que",
+    "type": "word",
+    "start": 7.16,
+    "end": 7.22
+  },
+  {
+    "text": "acabamos",
+    "type": "word",
+    "start": 7.24,
+    "end": 7.68
+  },
+  {
+    "text": "de",
+    "type": "word",
+    "start": 7.7,
+    "end": 7.72
+  },
+  {
+    "text": "inscribir",
+    "type": "word",
+    "start": 7.76,
+    "end": 8.1
+  },
+  {
+    "text": "a",
+    "type": "word",
+    "start": 8.14,
+    "end": 8.18
+  },
+  {
+    "text": "los",
+    "type": "word",
+    "start": 8.22,
+    "end": 8.34
+  },
+  {
+    "text": "niños",
+    "type": "word",
+    "start": 8.4,
+    "end": 8.82
+  },
+  {
+    "text": "y",
+    "type": "word",
+    "start": 8.88,
+    "end": 8.96
+  },
+  {
+    "text": "traigo",
+    "type": "word",
+    "start": 9.08,
+    "end": 9.3
+  },
+  {
+    "text": "el",
+    "type": "word",
+    "start": 9.34,
+    "end": 9.42
+  },
+  {
+    "text": "carro",
+    "type": "word",
+    "start": 9.46,
+    "end": 9.62
+  },
+  {
+    "text": "en",
+    "type": "word",
+    "start": 9.64,
+    "end": 9.7
+  },
+  {
+    "text": "el",
+    "type": "word",
+    "start": 9.74,
+    "end": 9.8
+  },
+  {
+    "text": "taller.",
+    "type": "word",
+    "start": 9.86,
+    "end": 10.2
+  },
+  {
+    "text": "Este",
+    "type": "word",
+    "start": 10.74,
+    "end": 10.94
+  },
+  {
+    "text": "mes",
+    "type": "word",
+    "start": 10.98,
+    "end": 11.1
+  },
+  {
+    "text": "está",
+    "type": "word",
+    "start": 11.14,
+    "end": 11.38
+  },
+  {
+    "text": "pesado.",
+    "type": "word",
+    "start": 11.4,
+    "end": 11.86
+  },
+  {
+    "text": "Se",
+    "type": "word",
+    "start": 12.82,
+    "end": 12.88
+  },
+  {
+    "text": "lo",
+    "type": "word",
+    "start": 12.94,
+    "end": 12.98
+  },
+  {
+    "text": "agradezco.",
+    "type": "word",
+    "start": 13.02,
+    "end": 13.56
+  },
+  {
+    "text": "Mejor",
+    "type": "word",
+    "start": 14,
+    "end": 14.22
+  },
+  {
+    "text": "márqueme",
+    "type": "word",
+    "start": 14.26,
+    "end": 14.54
+  },
+  {
+    "text": "en",
+    "type": "word",
+    "start": 14.56,
+    "end": 14.62
+  },
+  {
+    "text": "unos",
+    "type": "word",
+    "start": 14.66,
+    "end": 14.86
+  },
+  {
+    "text": "meses",
+    "type": "word",
+    "start": 14.9,
+    "end": 15.26
+  },
+  {
+    "text": "cuando",
+    "type": "word",
+    "start": 15.36,
+    "end": 15.64
+  },
+  {
+    "text": "se",
+    "type": "word",
+    "start": 15.68,
+    "end": 15.72
+  },
+  {
+    "text": "acomode",
+    "type": "word",
+    "start": 15.76,
+    "end": 16.1
+  },
+  {
+    "text": "todo",
+    "type": "word",
+    "start": 16.18,
+    "end": 16.379
+  }
+]

@@ -1,0 +1,15 @@
+node_modules/
+out/
+.env
+.DS_Store
+
+# Videos ya renderizados que acompañan a los exámenes (se regeneran con ffmpeg desde out/).
+examen*/video/
+
+# Gotham es una fuente con licencia: no va en un repo público. Cópiala a public/fonts
+# (ver README). Sin ella el render usa Helvetica/Arial.
+public/fonts/Gotham*
+public/fonts/GothamPro*
+
+# index.html del examen lleva Gotham embebida: se genera con python3 examen*/build.py.
+examen*/index.html

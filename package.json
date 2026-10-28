@@ -1,0 +1,27 @@
+{
+  "name": "capacitacion-motion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Videos de capacitación para asesores de J. García López (Remotion)",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render ClienteDificil out/cliente-dificil-raw.mp4 && bash scripts/master.sh out/cliente-dificil-raw.mp4 out/cliente-dificil.mp4",
+    "render:ventas": "remotion render ScriptVentas out/script-ventas-raw.mp4 && bash scripts/master.sh out/script-ventas-raw.mp4 out/script-ventas.mp4",
+    "voz": "node scripts/voz.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.440",
+    "@remotion/google-fonts": "4.0.440",
+    "@remotion/paths": "4.0.440",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.440"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "^4.0.440",
+    "@remotion/renderer": "^4.0.440",
+    "@types/react": "19.0.0",
+    "typescript": "5.7.3"
+  }
+}

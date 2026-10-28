@@ -1,0 +1,53 @@
+[dry] [suspicious] Sí. ¿Quién habla?
+
+[pause]
+
+[annoyed] [curt] Mire, señorita, no me interesa. Ya me han llamado de mil lados y estoy ocupado.
+
+[pause]
+
+[impatient] Pues... no sé, nunca lo he pensado. ¿Qué vende? ¿Seguros?
+
+[pause]
+
+[angry] [raising voice] ¿Funerario? No, no, no. No quiero hablar de ese tema. Estoy sano y, además, eso se llama solo.
+
+[pause]
+
+[defensive] Ustedes nada más quieren vender.
+
+[pause]
+
+[long pause] [sad] [softly] ...Sí. Cuando falleció mi papá. [sighs] La verdad, fue un desastre. Mis hermanos y yo discutiendo quién pagaba, buscando funeraria a las dos de la mañana.
+
+[pause]
+
+[reserved] Mi esposa y dos hijos. Pero ya le digo que no ando para gastos. Eso ha de ser carísimo.
+
+[pause]
+
+[reluctant] Cremación, supongo. [curious] Pero, ¿qué incluye exactamente?
+
+[pause]
+
+[skeptical] ¿Y quién me garantiza que dentro de veinte años ustedes van a seguir ahí?
+
+[pause]
+
+[thoughtful] Sí... se oye bien. Pero necesito pensarlo.
+
+[pause]
+
+[sincere] Con mi esposa. [chuckles softly] Ella lleva las cuentas de la casa.
+
+[pause]
+
+[interested] No, quedó claro. Oiga, ¿me puede mandar la información por escrito? Quiero que mi esposa la vea. Y también quiero saber cuánto saldría si incluyo a mi mamá.
+
+[pause]
+
+[friendly] El sábado en la mañana. A las diez.
+
+[pause]
+
+[embarrassed] [warmly] Gracias, señorita. Y perdone si al principio fui grosero.

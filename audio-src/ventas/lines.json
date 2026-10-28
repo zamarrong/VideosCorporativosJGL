@@ -1,0 +1,374 @@
+[
+ {
+  "id": "n01",
+  "who": "N",
+  "text": "Este guion salió de las llamadas reales de quien más vende en J. García López. Lo va a ver en cuatro llamadas de un mismo asesor, Andrés Medina, con tres clientes distintos.",
+  "spk": "Este guion salió de las llamadas reales de quien más vende en J. García López. Lo va a ver en cuatro llamadas de un mismo asesor, Andrés Medina, con tres clientes distintos."
+ },
+ {
+  "id": "n02",
+  "who": "N",
+  "text": "Fíjese en el orden: abrir con confianza, descubrir la necesidad, presentar la opción adecuada y acordar un siguiente paso. Andrés pregunta antes de ofrecer.",
+  "spk": "Fíjese en el orden: abrir con confianza, descubrir la necesidad, presentar la opción adecuada y acordar un siguiente paso. Andrés pregunta antes de ofrecer."
+ },
+ {
+  "id": "n03",
+  "who": "N",
+  "text": "Primera llamada. Andrés le marca a la señora Patricia Morales, de cincuenta y ocho años. Ella no lo conoce.",
+  "spk": "Primera llamada. Andrés le marca a la señora Patricia Morales, de cincuenta y ocho años. Ella no lo conoce."
+ },
+ {
+  "id": "a01",
+  "who": "A",
+  "text": "Buenos días, ¿tengo el gusto de hablar con la señora **Patricia Morales**?",
+  "spk": "Buenos días, ¿tengo el gusto de hablar con la señora Patricia Morales?"
+ },
+ {
+  "id": "p01",
+  "who": "P",
+  "text": "Sí, ella habla. ¿Quién la busca?",
+  "spk": "Sí, ella habla. ¿Quién la busca?"
+ },
+ {
+  "id": "a02",
+  "who": "A",
+  "text": "Mucho gusto, mi nombre es **Andrés Medina** y me comunico de **J. García López**. El motivo de mi llamada es compartirle información sobre nuestros **planes de previsión funeraria**, para que usted conozca las alternativas y pueda **valorar si alguna se adapta** a sus necesidades y posibilidades.",
+  "spk": "Mucho gusto, mi nombre es Andrés Medina y me comunico de J. García López. El motivo de mi llamada es compartirle información sobre nuestros planes de previsión funeraria, para que usted conozca las alternativas y pueda valorar si alguna se adapta a sus necesidades y posibilidades."
+ },
+ {
+  "id": "a03",
+  "who": "A",
+  "text": "¿Me permite hacerle **un par de preguntas** para orientarle mejor? **No quiero llenarle de información** que quizá no sea la que usted necesita.",
+  "spk": "¿Me permite hacerle un par de preguntas para orientarle mejor? No quiero llenarle de información que quizá no sea la que usted necesita."
+ },
+ {
+  "id": "p02",
+  "who": "P",
+  "text": "Ándele, dígame.",
+  "spk": "Ándele, dígame."
+ },
+ {
+  "id": "n04",
+  "who": "N",
+  "text": "Andrés sí pidió permiso, para hacerle un par de preguntas, y le explicó la razón: no quiere llenarla de información que no necesita.",
+  "spk": "Andrés sí pidió permiso, para hacerle un par de preguntas, y le explicó la razón: no quiere llenarla de información que no necesita."
+ },
+ {
+  "id": "a04",
+  "who": "A",
+  "text": "Antes de explicarle nuestros planes, me gustaría conocer un poquito más de su situación. ¿Usted ha considerado anteriormente un plan de previsión, o sería **la primera vez** que revisa este tipo de opciones?",
+  "spk": "Antes de explicarle nuestros planes, me gustaría conocer un poquito más de su situación. ¿Usted ha considerado anteriormente un plan de previsión, o sería la primera vez que revisa este tipo de opciones?"
+ },
+ {
+  "id": "p03",
+  "who": "P",
+  "text": "La primera vez. Nunca nos hemos sentado a verlo.",
+  "spk": "La primera vez. Nunca nos hemos sentado a verlo."
+ },
+ {
+  "id": "a05",
+  "who": "A",
+  "text": "Y en su caso, ¿estaría buscando **protegerse usted**, a su **pareja**, a sus **papás** o a **varios integrantes** de su familia?",
+  "spk": "Y en su caso, ¿estaría buscando protegerse usted, a su pareja, a sus papás o a varios integrantes de su familia?"
+ },
+ {
+  "id": "p04",
+  "who": "P",
+  "text": "A mi esposo y a mí. Y a lo mejor a mi mamá, que ya tiene ochenta y dos años.",
+  "spk": "A mi esposo y a mí. Y a lo mejor a mi mamá, que ya tiene ochenta y dos años."
+ },
+ {
+  "id": "a06",
+  "who": "A",
+  "text": "¿Hay alguna **necesidad en particular** que le gustaría resolver? Por ejemplo, contar con un servicio **previamente organizado**, evitar que su familia tenga que resolver todo **en un momento complicado**, o conocer **alternativas de pago**.",
+  "spk": "¿Hay alguna necesidad en particular que le gustaría resolver? Por ejemplo, contar con un servicio previamente organizado, evitar que su familia tenga que resolver todo en un momento complicado, o conocer alternativas de pago."
+ },
+ {
+  "id": "p05",
+  "who": "P",
+  "text": "Lo que no quiero es que mis hijos batallen como batallamos nosotros cuando murió mi papá. Fue todo **a las carreras**.",
+  "spk": "Lo que no quiero es que mis hijos batallen como batallamos nosotros cuando murió mi papá. Fue todo a las carreras."
+ },
+ {
+  "id": "a07",
+  "who": "A",
+  "text": "**Comprendo** lo que me comenta. Entonces, si le parece, voy a explicarle las opciones que podrían **ajustarse a sus necesidades**.",
+  "spk": "Comprendo lo que me comenta. Entonces, si le parece, voy a explicarle las opciones que podrían ajustarse a sus necesidades."
+ },
+ {
+  "id": "n05",
+  "who": "N",
+  "text": "Tres preguntas antes de hablar del plan: si ya lo había pensado, a quién quiere proteger y qué necesita resolver. Ahora Andrés sabe qué ofrecerle.",
+  "spk": "Tres preguntas antes de hablar del plan: si ya lo había pensado, a quién quiere proteger y qué necesita resolver. Ahora Andrés sabe qué ofrecerle."
+ },
+ {
+  "id": "a08",
+  "who": "A",
+  "text": "Por lo que me comenta, considero que lo más importante para usted es **que sus hijos no tengan que resolver todo a las carreras**.",
+  "spk": "Por lo que me comenta, considero que lo más importante para usted es que sus hijos no tengan que resolver todo a las carreras."
+ },
+ {
+  "id": "a09",
+  "who": "A",
+  "text": "Me gustaría explicarle **qué incluye** la opción que podría interesarle, **cuánto cuesta** y **cuáles son sus condiciones**, para que pueda decidir **con toda claridad**. La opción que podemos revisar es [nombre del plan]. Este plan contempla [servicios confirmados].",
+  "spk": "Me gustaría explicarle qué incluye la opción que podría interesarle, cuánto cuesta y cuáles son sus condiciones, para que pueda decidir con toda claridad. La opción que podemos revisar es esta. Este plan contempla los servicios confirmados."
+ },
+ {
+  "id": "a10",
+  "who": "A",
+  "text": "En cuanto a la forma de pago, podemos revisar [modalidades autorizadas]. Para esta opción, el costo es de [importe confirmado], con [anticipo y mensualidad].",
+  "spk": "En cuanto a la forma de pago, podemos revisar las modalidades autorizadas. Para esta opción, le doy el costo, con el anticipo y la mensualidad."
+ },
+ {
+  "id": "a11",
+  "who": "A",
+  "text": "Quiero que tenga muy claro **qué incluye**, **qué condiciones aplican** y **qué necesita cumplir** para utilizar el servicio. Si tiene alguna duda, con mucho gusto la revisamos antes de continuar.",
+  "spk": "Quiero que tenga muy claro qué incluye, qué condiciones aplican y qué necesita cumplir para utilizar el servicio. Si tiene alguna duda, con mucho gusto la revisamos antes de continuar."
+ },
+ {
+  "id": "a12",
+  "who": "A",
+  "text": "De lo que le acabo de explicar, ¿qué aspecto le resulta **más importante**: los **servicios incluidos**, la **forma de pago** o la posibilidad de **proteger a más integrantes** de su familia?",
+  "spk": "De lo que le acabo de explicar, ¿qué aspecto le resulta más importante: los servicios incluidos, la forma de pago o la posibilidad de proteger a más integrantes de su familia?"
+ },
+ {
+  "id": "p06",
+  "who": "P",
+  "text": "Lo de mi mamá, la verdad. Pero esto lo tengo que **consultar con mi familia**.",
+  "spk": "Lo de mi mamá, la verdad. Pero esto lo tengo que consultar con mi familia."
+ },
+ {
+  "id": "n06",
+  "who": "N",
+  "text": "«Lo tengo que consultar con mi familia». Andrés no lo toma como un no. Le ayuda a llevar la información a su casa.",
+  "spk": "«Lo tengo que consultar con mi familia». Andrés no lo toma como un no. Le ayuda a llevar la información a su casa."
+ },
+ {
+  "id": "a13",
+  "who": "A",
+  "text": "**Por supuesto**, me parece **una buena decisión** que lo converse con su familia, porque es un tema que puede involucrar a varias personas. Para que puedan revisarlo con mayor facilidad, ¿qué cree que les interesaría **conocer primero**: el costo, los servicios incluidos o las condiciones del plan?",
+  "spk": "Por supuesto, me parece una buena decisión que lo converse con su familia, porque es un tema que puede involucrar a varias personas. Para que puedan revisarlo con mayor facilidad, ¿qué cree que les interesaría conocer primero: el costo, los servicios incluidos o las condiciones del plan?"
+ },
+ {
+  "id": "p07",
+  "who": "P",
+  "text": "El costo, y si se puede incluir a mi mamá. **Mándeme la información por WhatsApp.**",
+  "spk": "El costo, y si se puede incluir a mi mamá. Mándeme la información por WhatsApp."
+ },
+ {
+  "id": "a14",
+  "who": "A",
+  "text": "**Con mucho gusto.** Le enviaré la información del plan que revisamos, con los servicios, los costos y las condiciones aplicables. Para enviarle algo que realmente le sea útil, ¿prefiere **la opción más acorde** con lo que me comentó, o desea **comparar varias** alternativas?",
+  "spk": "Con mucho gusto. Le enviaré la información del plan que revisamos, con los servicios, los costos y las condiciones aplicables. Para enviarle algo que realmente le sea útil, ¿prefiere la opción más acorde con lo que me comentó, o desea comparar varias alternativas?"
+ },
+ {
+  "id": "p08",
+  "who": "P",
+  "text": "La que me dijo, y otra con mi mamá incluida.",
+  "spk": "La que me dijo, y otra con mi mamá incluida."
+ },
+ {
+  "id": "a15",
+  "who": "A",
+  "text": "Perfecto. Se la envío **a este número**. Y para no dejarle únicamente la información y que después se quede con alguna duda, ¿le parece si **acordamos una llamada breve** para revisarla juntos? ¿Le funciona el **jueves a las seis** de la tarde?",
+  "spk": "Perfecto. Se la envío a este número. Y para no dejarle únicamente la información y que después se quede con alguna duda, ¿le parece si acordamos una llamada breve para revisarla juntos? ¿Le funciona el jueves a las seis de la tarde?"
+ },
+ {
+  "id": "p09",
+  "who": "P",
+  "text": "Sí, el jueves a las seis está bien. Ya va a estar mi esposo.",
+  "spk": "Sí, el jueves a las seis está bien. Ya va a estar mi esposo."
+ },
+ {
+  "id": "a16",
+  "who": "A",
+  "text": "Perfecto. Entonces, **quedamos** en que me comunicaré con usted **el jueves a las seis**. Le enviaré la información acordada y, cuando volvamos a hablar, podremos **resolver cualquier duda** que le haya surgido. Le agradezco mucho su tiempo. Que tenga excelente día.",
+  "spk": "Perfecto. Entonces, quedamos en que me comunicaré con usted el jueves a las seis. Le enviaré la información acordada y, cuando volvamos a hablar, podremos resolver cualquier duda que le haya surgido. Le agradezco mucho su tiempo. Que tenga excelente día."
+ },
+ {
+  "id": "n07",
+  "who": "N",
+  "text": "Al colgar, Andrés registra cuatro cosas: el motivo de interés, la objeción principal, la información enviada y la fecha del seguimiento. Y no lo cuenta como venta: pedir información no significa que ella ya decidió.",
+  "spk": "Al colgar, Andrés registra cuatro cosas: el motivo de interés, la objeción principal, la información enviada y la fecha del seguimiento. Y no lo cuenta como venta: pedir información no significa que ella ya decidió."
+ },
+ {
+  "id": "n08",
+  "who": "N",
+  "text": "Segunda llamada. El señor Joaquín Rivas, de cuarenta y cinco años, ya escuchó la opción y el costo.",
+  "spk": "Segunda llamada. El señor Joaquín Rivas, de cuarenta y cinco años, ya escuchó la opción y el costo."
+ },
+ {
+  "id": "j01",
+  "who": "J",
+  "text": "Mire, joven, se oye bien, pero **no tengo dinero**. Ahorita no me alcanza.",
+  "spk": "Mire, joven, se oye bien, pero no tengo dinero. Ahorita no me alcanza."
+ },
+ {
+  "id": "a17",
+  "who": "A",
+  "text": "**Lo entiendo**, y **gracias por decírmelo con confianza**. Sé que cada familia tiene compromisos económicos diferentes y **no quisiera recomendarle algo que represente una carga** para usted.",
+  "spk": "Lo entiendo, y gracias por decírmelo con confianza. Sé que cada familia tiene compromisos económicos diferentes y no quisiera recomendarle algo que represente una carga para usted."
+ },
+ {
+  "id": "a18",
+  "who": "A",
+  "text": "Para orientarle mejor, ¿lo que le preocupa es **el pago inicial**, **el monto de la mensualidad**, o que en este momento tiene **otros gastos prioritarios**?",
+  "spk": "Para orientarle mejor, ¿lo que le preocupa es el pago inicial, el monto de la mensualidad, o que en este momento tiene otros gastos prioritarios?"
+ },
+ {
+  "id": "j02",
+  "who": "J",
+  "text": "Es que acabamos de inscribir a los niños y traigo el carro en el taller. Este mes está pesado.",
+  "spk": "Es que acabamos de inscribir a los niños y traigo el carro en el taller. Este mes está pesado."
+ },
+ {
+  "id": "a19",
+  "who": "A",
+  "text": "**Comprendo.** Si usted lo considera conveniente, podemos revisar si existe alguna **alternativa autorizada** que se ajuste mejor a sus posibilidades. Y si en este momento no es viable, también podemos **dejarlo para más adelante**. Lo importante es que tome una **decisión informada** y que **no comprometa gastos esenciales** de su familia.",
+  "spk": "Comprendo. Si usted lo considera conveniente, podemos revisar si existe alguna alternativa autorizada que se ajuste mejor a sus posibilidades. Y si en este momento no es viable, también podemos dejarlo para más adelante. Lo importante es que tome una decisión informada y que no comprometa gastos esenciales de su familia."
+ },
+ {
+  "id": "j03",
+  "who": "J",
+  "text": "Se lo agradezco. Mejor márqueme en unos meses, cuando se acomode todo.",
+  "spk": "Se lo agradezco. Mejor márqueme en unos meses, cuando se acomode todo."
+ },
+ {
+  "id": "a20",
+  "who": "A",
+  "text": "Lo **comprendo**, y agradezco que me lo haya comentado **con sinceridad**. No quisiera que adquiriera un compromiso que en este momento no le resulte conveniente. Dejamos **abierta la posibilidad** de conversar más adelante, en el momento que le resulte oportuno. Muchas gracias por atender mi llamada.",
+  "spk": "Lo comprendo, y agradezco que me lo haya comentado con sinceridad. No quisiera que adquiriera un compromiso que en este momento no le resulte conveniente. Dejamos abierta la posibilidad de conversar más adelante, en el momento que le resulte oportuno. Muchas gracias por atender mi llamada."
+ },
+ {
+  "id": "n09",
+  "who": "N",
+  "text": "Aquí no hubo venta, y Andrés no discutió ni presionó. Dejó la puerta abierta, y el señor Rivas le pidió que le vuelva a marcar.",
+  "spk": "Aquí no hubo venta, y Andrés no discutió ni presionó. Dejó la puerta abierta, y el señor Rivas le pidió que le vuelva a marcar."
+ },
+ {
+  "id": "n10",
+  "who": "N",
+  "text": "Tercera llamada. La señora Carmen Salazar, de setenta y un años, ya conoce el plan y dice que lo va a pensar.",
+  "spk": "Tercera llamada. La señora Carmen Salazar, de setenta y un años, ya conoce el plan y dice que lo va a pensar."
+ },
+ {
+  "id": "c01",
+  "who": "C",
+  "text": "Está bien, joven. Déjeme **pensarlo**.",
+  "spk": "Está bien, joven. Déjeme pensarlo."
+ },
+ {
+  "id": "a21",
+  "who": "A",
+  "text": "**Claro**, entiendo que es una decisión que merece **tiempo y atención**. Para ayudarle a valorar la información, quisiera preguntarle algo: ¿hay **algún punto** que todavía **no le convenza** o que le gustaría aclarar antes de tomar una decisión?",
+  "spk": "Claro, entiendo que es una decisión que merece tiempo y atención. Para ayudarle a valorar la información, quisiera preguntarle algo: ¿hay algún punto que todavía no le convenza o que le gustaría aclarar antes de tomar una decisión?"
+ },
+ {
+  "id": "c02",
+  "who": "C",
+  "text": "Pues sí. Si me pasa algo antes de terminar de pagar, **¿lo puedo usar?** Porque a mi edad, uno nunca sabe.",
+  "spk": "Pues sí. Si me pasa algo antes de terminar de pagar, ¿lo puedo usar? Porque a mi edad, uno nunca sabe."
+ },
+ {
+  "id": "a22",
+  "who": "A",
+  "text": "**Gracias por compartirlo** conmigo. Es una pregunta **muy importante** y prefiero explicársela **con toda claridad**. Las condiciones para utilizar el servicio dependen de lo establecido en **el plan que usted contrate**. Por eso, antes de que tome una decisión, voy a revisar con usted **los requisitos**, **los pagos** y cualquier **saldo pendiente** que pudiera corresponder.",
+  "spk": "Gracias por compartirlo conmigo. Es una pregunta muy importante y prefiero explicársela con toda claridad. Las condiciones para utilizar el servicio dependen de lo establecido en el plan que usted contrate. Por eso, antes de que tome una decisión, voy a revisar con usted los requisitos, los pagos y cualquier saldo pendiente que pudiera corresponder."
+ },
+ {
+  "id": "a23",
+  "who": "A",
+  "text": "**No quiero darle una respuesta imprecisa** ni prometerle una cobertura que no esté confirmada. Mi responsabilidad es que usted sepa **exactamente qué está contratando** y en qué condiciones puede utilizarlo. ¿Le parece si **revisamos juntos** las condiciones de la opción que le interesa?",
+  "spk": "No quiero darle una respuesta imprecisa ni prometerle una cobertura que no esté confirmada. Mi responsabilidad es que usted sepa exactamente qué está contratando y en qué condiciones puede utilizarlo. ¿Le parece si revisamos juntos las condiciones de la opción que le interesa?"
+ },
+ {
+  "id": "c03",
+  "who": "C",
+  "text": "Sí, eso sí me gustaría. Así me quedo tranquila.",
+  "spk": "Sí, eso sí me gustaría. Así me quedo tranquila."
+ },
+ {
+  "id": "a24",
+  "who": "A",
+  "text": "Y si después de revisarlo necesita más tiempo, **no hay problema**. ¿Le parece si **acordamos un día** para volver a conversar y saber si le surgió alguna duda?",
+  "spk": "Y si después de revisarlo necesita más tiempo, no hay problema. ¿Le parece si acordamos un día para volver a conversar y saber si le surgió alguna duda?"
+ },
+ {
+  "id": "c04",
+  "who": "C",
+  "text": "El lunes en la mañana, cuando no estén mis nietos.",
+  "spk": "El lunes en la mañana, cuando no estén mis nietos."
+ },
+ {
+  "id": "n11",
+  "who": "N",
+  "text": "La señora Salazar hizo la pregunta difícil. Andrés no adivinó ni prometió una cobertura: la llevó a revisar con él las condiciones del plan.",
+  "spk": "La señora Salazar hizo la pregunta difícil. Andrés no adivinó ni prometió una cobertura: la llevó a revisar con él las condiciones del plan."
+ },
+ {
+  "id": "n12",
+  "who": "N",
+  "text": "Cuarta llamada. Es jueves a las seis, como quedaron. La señora Morales y su esposo ya vieron la información.",
+  "spk": "Cuarta llamada. Es jueves a las seis, como quedaron. La señora Morales y su esposo ya vieron la información."
+ },
+ {
+  "id": "a25",
+  "who": "A",
+  "text": "Buenas tardes, señora Morales. Le llamo **como quedamos**, para revisar la información que le envié.",
+  "spk": "Buenas tardes, señora Morales. Le llamo como quedamos, para revisar la información que le envié."
+ },
+ {
+  "id": "p10",
+  "who": "P",
+  "text": "Sí, ya la vimos con mi esposo. Nos gustó, pero todavía tenemos dudas, sobre todo de lo de mi mamá.",
+  "spk": "Sí, ya la vimos con mi esposo. Nos gustó, pero todavía tenemos dudas, sobre todo de lo de mi mamá."
+ },
+ {
+  "id": "a26",
+  "who": "A",
+  "text": "Por lo que me ha comentado, veo que **sí le interesa** una alternativa para su familia, aunque todavía necesita **revisar algunos puntos**. Podemos avanzar **de acuerdo con lo que usted necesite**: si requiere conversar con su pareja, revisar sus gastos o recibir una explicación más detallada, podemos organizarlo.",
+  "spk": "Por lo que me ha comentado, veo que sí le interesa una alternativa para su familia, aunque todavía necesita revisar algunos puntos. Podemos avanzar de acuerdo con lo que usted necesite: si requiere conversar con su pareja, revisar sus gastos o recibir una explicación más detallada, podemos organizarlo."
+ },
+ {
+  "id": "a27",
+  "who": "A",
+  "text": "Si existe la posibilidad de una **asesoría presencial**, podemos revisar la disponibilidad y coordinar una cita. ¿Qué le ayudaría más **en este momento** para continuar?",
+  "spk": "Si existe la posibilidad de una asesoría presencial, podemos revisar la disponibilidad y coordinar una cita. ¿Qué le ayudaría más en este momento para continuar?"
+ },
+ {
+  "id": "p11",
+  "who": "P",
+  "text": "Que nos explique en persona, a mi esposo y a mí. Así vemos lo de mi mamá con calma.",
+  "spk": "Que nos explique en persona, a mi esposo y a mí. Así vemos lo de mi mamá con calma."
+ },
+ {
+  "id": "a28",
+  "who": "A",
+  "text": "**Con mucho gusto.** Vamos a revisar la disponibilidad para coordinar su visita el **sábado a las once**, en [lugar confirmado]. Antes de terminar, le confirmaré **los detalles de la cita** y **la información que conviene tener a la mano**. Muchas gracias por su tiempo. **Será un gusto atenderle.**",
+  "spk": "Con mucho gusto. Vamos a revisar la disponibilidad para coordinar su visita el sábado a las once. Antes de terminar, le confirmaré los detalles de la cita y la información que conviene tener a la mano. Muchas gracias por su tiempo. Será un gusto atenderle."
+ },
+ {
+  "id": "p12",
+  "who": "P",
+  "text": "Gracias, Andrés. Ahí nos vemos el sábado.",
+  "spk": "Gracias, Andrés. Ahí nos vemos el sábado."
+ },
+ {
+  "id": "n13",
+  "who": "N",
+  "text": "Andrés cumplió lo que acordó: marcó el jueves a las seis. Por eso la señora Morales le contestó, y ahora hay una cita.",
+  "spk": "Andrés cumplió lo que acordó: marcó el jueves a las seis. Por eso la señora Morales le contestó, y ahora hay una cita."
+ },
+ {
+  "id": "n14",
+  "who": "N",
+  "text": "Las reglas de oro. Pregunte antes de ofrecer. Escuche más y hable con propósito. No discuta las objeciones: responda con comprensión, no con presión. No prometa lo que no está confirmado. No confunda interés con venta. Registre los compromisos. Y cierre cada conversación con un siguiente paso claro.",
+  "spk": "Las reglas de oro. Pregunte antes de ofrecer. Escuche más y hable con propósito. No discuta las objeciones: responda con comprensión, no con presión. No prometa lo que no está confirmado. No confunda interés con venta. Registre los compromisos. Y cierre cada conversación con un siguiente paso claro."
+ },
+ {
+  "id": "n15",
+  "who": "N",
+  "text": "Una buena llamada no es la que más habla, sino la que mejor entiende al cliente y le ayuda a avanzar.",
+  "spk": "Una buena llamada no es la que más habla, sino la que mejor entiende al cliente y le ayuda a avanzar."
+ }
+]

@@ -1,0 +1,45 @@
+[cautious] Sí, ella habla. ¿Quién la busca?
+
+[pause]
+
+[guarded] [softening] Ándele, dígame.
+
+[pause]
+
+[thoughtful] La primera vez. Nunca nos hemos sentado a verlo.
+
+[pause]
+
+[thoughtful] A mi esposo y a mí. Y a lo mejor a mi mamá, que ya tiene ochenta y dos años.
+
+[pause]
+
+[sincere] [a bit sad] Lo que no quiero es que mis hijos batallen como batallamos nosotros cuando murió mi papá. Fue todo a las carreras.
+
+[pause]
+
+[thoughtful] Lo de mi mamá, la verdad. [hesitant] Pero esto lo tengo que consultar con mi familia.
+
+[pause]
+
+[practical] El costo, y si se puede incluir a mi mamá. Mándeme la información por WhatsApp.
+
+[pause]
+
+[friendly] La que me dijo, y otra con mi mamá incluida.
+
+[pause]
+
+[warmly] Sí, el jueves a las seis está bien. Ya va a estar mi esposo.
+
+[pause]
+
+[friendly] Sí, ya la vimos con mi esposo. Nos gustó, [thoughtful] pero todavía tenemos dudas, sobre todo de lo de mi mamá.
+
+[pause]
+
+[decided] Que nos explique en persona, a mi esposo y a mí. Así vemos lo de mi mamá con calma.
+
+[pause]
+
+[warmly] Gracias, Andrés. Ahí nos vemos el sábado.

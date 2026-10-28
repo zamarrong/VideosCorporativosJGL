@@ -1,0 +1,45 @@
+[gently] Lo entiendo, y gracias por decírmelo con confianza. Sé que cada familia tiene compromisos económicos diferentes y no quisiera recomendarle algo que represente una carga para usted.
+
+[pause]
+
+Para orientarle mejor, ¿lo que le preocupa es el pago inicial, el monto de la mensualidad, o que en este momento tiene otros gastos prioritarios?
+
+[pause]
+
+[calm] Comprendo. Si usted lo considera conveniente, podemos revisar si existe alguna alternativa autorizada que se ajuste mejor a sus posibilidades. Y si en este momento no es viable, también podemos dejarlo para más adelante. Lo importante es que tome una decisión informada y que no comprometa gastos esenciales de su familia.
+
+[pause]
+
+[warmly] Lo comprendo, y agradezco que me lo haya comentado con sinceridad. No quisiera que adquiriera un compromiso que en este momento no le resulte conveniente. Dejamos abierta la posibilidad de conversar más adelante, en el momento que le resulte oportuno. Muchas gracias por atender mi llamada.
+
+[pause]
+
+[calm] Claro, entiendo que es una decisión que merece tiempo y atención. Para ayudarle a valorar la información, quisiera preguntarle algo: ¿hay algún punto que todavía no le convenza o que le gustaría aclarar antes de tomar una decisión?
+
+[pause]
+
+[sincere] Gracias por compartirlo conmigo. Es una pregunta muy importante y prefiero explicársela con toda claridad. [calm] Las condiciones para utilizar el servicio dependen de lo establecido en el plan que usted contrate. Por eso, antes de que tome una decisión, voy a revisar con usted los requisitos, los pagos y cualquier saldo pendiente que pudiera corresponder.
+
+[pause]
+
+No quiero darle una respuesta imprecisa ni prometerle una cobertura que no esté confirmada. Mi responsabilidad es que usted sepa exactamente qué está contratando y en qué condiciones puede utilizarlo. ¿Le parece si revisamos juntos las condiciones de la opción que le interesa?
+
+[pause]
+
+Y si después de revisarlo necesita más tiempo, no hay problema. ¿Le parece si acordamos un día para volver a conversar y saber si le surgió alguna duda?
+
+[pause]
+
+[warmly] Buenas tardes, señora Morales. Le llamo como quedamos, para revisar la información que le envié.
+
+[pause]
+
+Por lo que me ha comentado, veo que sí le interesa una alternativa para su familia, aunque todavía necesita revisar algunos puntos. Podemos avanzar de acuerdo con lo que usted necesite: si requiere conversar con su pareja, revisar sus gastos o recibir una explicación más detallada, podemos organizarlo.
+
+[pause]
+
+Si existe la posibilidad de una asesoría presencial, podemos revisar la disponibilidad y coordinar una cita. ¿Qué le ayudaría más en este momento para continuar?
+
+[pause]
+
+[warmly] Con mucho gusto. Vamos a revisar la disponibilidad para coordinar su visita el sábado a las once. Antes de terminar, le confirmaré los detalles de la cita y la información que conviene tener a la mano. Muchas gracias por su tiempo. Será un gusto atenderle.
